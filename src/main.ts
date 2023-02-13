@@ -3,6 +3,7 @@ import { setupRouter } from '@/router';
 import { setupStore } from '@/store';
 import { setupVantUI } from '@/plugins';
 import App from './App.vue';
+import '@/style/scss/index.scss';
 // eslint-disable-next-line import/no-unresolved
 import 'uno.css';
 async function setupApp() {

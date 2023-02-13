@@ -1,0 +1,29 @@
+@use 'sass:math';
+@use 'sass:map';
+
+// 颜色
+$colors: () !default;
+$colors: map.deep-merge(
+  (
+    'primary': (
+      'base': #1643df
+    )
+  ),
+  $colors
+);
+
+// 主题色
+$color-primary: map.get($colors, 'primary', 'base') !default;
+
+// 字体颜色
+$text-color: () !default;
+$text-color: map.merge(
+  (
+    'primary': #303133,
+    'regular': #606266,
+    'secondary': #909399,
+    'placeholder': #a8abb2,
+    'disabled': #c0c4cc
+  ),
+  $text-color
+);

@@ -17,7 +17,7 @@ export default Unocss({
   },
   theme: {
     colors: {
-      primary: '#ccf'
+      primary: 'var(--hometown-primary-color)'
     }
   }
 });
