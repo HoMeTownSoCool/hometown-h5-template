@@ -1,9 +1,10 @@
 import { createApp } from 'vue';
 import { setupRouter } from '@/router';
 import { setupStore } from '@/store';
-import setupVantUI from '@/plugins/vant';
+import { setupVantUI } from '@/plugins';
 import App from './App.vue';
-
+// eslint-disable-next-line import/no-unresolved
+import 'uno.css';
 async function setupApp() {
   const app = createApp(App);
 

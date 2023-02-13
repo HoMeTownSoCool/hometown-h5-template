@@ -6,7 +6,7 @@ import 'vant/es/dialog/style';
 // Notify
 // ImagePreview
 
-export default function setupVantUI() {
+export function setupVantUI() {
   window.$showToast = showToast;
   window.$showDialog = showDialog;
 }
