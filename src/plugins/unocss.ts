@@ -2,8 +2,12 @@ import useCssvar from '../hooks/use-cssvar';
 const uc = useCssvar();
 
 export const createRules = function createRules(): any {
-  const textColors = ['primary', 'regular', 'secondary', 'placeholder', 'disabled'];
   const rules: any = [];
+  /** z-index */
+  const zIndexs = [/^z-(\d+)$/, ([, d]: [unknown, number]) => ({ 'z-index': d })];
+  rules.push(zIndexs);
+  /** text colors */
+  const textColors = ['primary', 'regular', 'secondary', 'placeholder', 'disabled'];
   textColors.forEach((type: string) =>
     rules.push([
       `text-${type}`,
