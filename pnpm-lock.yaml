@@ -11,7 +11,7 @@ specifiers:
   '@unocss/preset-uno': ^0.49.4
   crypto-js: ^4.1.1
   pinia: ^2.0.13
-  postcss-px-to-viewport: ^1.1.1
+  postcss-px-to-viewport-8-plugin: ^1.2.0
   sass: ^1.49.11
   typescript: 4.9.5
   unocss: ^0.49.4
@@ -39,7 +39,7 @@ devDependencies:
   '@unocss/preset-attributify': 0.49.4
   '@unocss/preset-icons': 0.49.4
   '@unocss/preset-uno': 0.49.4
-  postcss-px-to-viewport: 1.1.1
+  postcss-px-to-viewport-8-plugin: 1.2.0
   sass: 1.58.0
   typescript: 4.9.5
   unocss: 0.49.4_vite@4.1.1
@@ -5789,11 +5789,10 @@ packages:
       enhanced-resolve: 4.5.0
     dev: true
 
-  /postcss-px-to-viewport/1.1.1:
-    resolution: {integrity: sha512-2x9oGnBms+e0cYtBJOZdlwrFg/mLR4P1g2IFu7jYKvnqnH/HLhoKyareW2Q/x4sg0BgklHlP1qeWo2oCyPm8FQ==}
+  /postcss-px-to-viewport-8-plugin/1.2.0:
+    resolution: {integrity: sha512-3mbLHcJSb8LymP3zIsvwBkumkyfau5IMEGcn83dzELIRi83yKbIuJCKv3sDZW5XaJs3CntdncYugHWffbubCsg==}
     dependencies:
       object-assign: 4.1.1
-      postcss: 8.4.21
     dev: true
 
   /postcss-selector-parser/6.0.11:
