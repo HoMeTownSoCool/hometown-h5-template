@@ -3,17 +3,15 @@
 
 // 颜色
 $colors: () !default;
-$colors: map.deep-merge(
+$colors: map.merge(
   (
-    'primary': (
-      'base': #FF1A00
-    )
+    'primary': #FF1A00
   ),
   $colors
 );
 
 // 主题色
-$color-primary: map.get($colors, 'primary', 'base') !default;
+$color-primary: map.get($colors, 'primary') !default;
 
 // 字体颜色
 $text-color: () !default;

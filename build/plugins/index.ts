@@ -1,7 +1,7 @@
 import autoImport from './auto-import';
-import uno from './uno';
+import Unocss from 'unocss/vite';
 
 export function setupVitePlugins() {
-  const plugins = [autoImport, uno];
+  const plugins = [autoImport, Unocss()];
   return plugins as never;
 }

@@ -3,9 +3,8 @@
 // CSS3 var
 @use 'common/var' as *;
 @use 'mixins/var' as *;
-@use 'mixins/mixins' as *;
 
 :root {
-  @include set-css-var-value(primary, $color-primary);
-  @include set-component-css-var('text-color', $text-color);
+  @include set-css-var-value('primary-color', $color-primary);
+  @include set-component-css-var('text-color', $text-color)
 }

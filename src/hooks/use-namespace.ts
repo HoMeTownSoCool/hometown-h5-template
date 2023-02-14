@@ -10,19 +10,22 @@
  * 如：disabled,highlighted,checked,fixed,sizebig,coloryellow
  */
 export const defaultNamespace = 'hometown';
-const statePrefix = 'is-';
+export const statePrefix = 'is-';
+export const commonSeparator = '-';
+export const elementSeparator = '__';
+export const modifierSeparator = '--';
 
 // eslint-disable-next-line max-params
 function bemCreator(namespace: string, block: string, blockSuffix: string, element: string, modifier: string) {
   let cls = `${namespace}-${block}`;
   if (blockSuffix) {
-    cls += `-${blockSuffix}`;
+    cls += `${commonSeparator}${blockSuffix}`;
   }
   if (element) {
-    cls += `__${element}`;
+    cls += `${elementSeparator}${element}`;
   }
   if (modifier) {
-    cls += `--${modifier}`;
+    cls += `${modifierSeparator}${modifier}`;
   }
   return cls;
 }

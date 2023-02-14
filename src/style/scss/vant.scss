@@ -1,0 +1,9 @@
+@use 'sass:map';
+
+// CSS3 var
+@use 'common/var' as *;
+@use 'mixins/var' as *;
+
+:root {
+  --van-primary-color: #{$color-primary};
+}
