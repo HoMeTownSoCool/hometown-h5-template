@@ -19,6 +19,7 @@ specifiers:
   vant: ^4.0.10
   vconsole: ^3.14.6
   vite: ^4.1.1
+  vite-plugin-vconsole: ^1.3.1
   vue: ^3.2.31
   vue-router: ^4.0.14
 
@@ -45,6 +46,7 @@ devDependencies:
   unocss: 0.49.4_vite@4.1.1
   unplugin-auto-import: 0.14.2
   vite: 4.1.1_sass@1.58.0+terser@5.16.3
+  vite-plugin-vconsole: 1.3.1
 
 packages:
 
@@ -7687,6 +7689,10 @@ packages:
       node-html-parser: 5.4.2
       pathe: 0.2.0
       vite: 4.1.1_sass@1.58.0+terser@5.16.3
+    dev: true
+
+  /vite-plugin-vconsole/1.3.1:
+    resolution: {integrity: sha512-fSuk+UROXpxIZsQID7/CSvBxIRO4Zug5P+Qv8H2Rdnl4ks9nAhSCzNBE4amyZhJLJE1Rl4z0EMIOomK8sHLugQ==}
     dev: true
 
   /vite/4.1.1_sass@1.58.0+terser@5.16.3:
