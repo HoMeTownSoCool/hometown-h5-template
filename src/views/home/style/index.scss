@@ -1,0 +1,12 @@
+@use 'sass:map';
+
+@import '@/style/scss/var.scss';
+@import '@/style/scss/mixins/mixins.scss';
+
+
+@include b(home-searched) {
+  background-color: #FFFFFF;
+  @include e(title) {
+    padding: 12px;
+  }
+}

@@ -1,3 +1,14 @@
+/**
+ * BEM 组成
+ * Block 块独立实体，独立的意义
+ * 如：header,container,menu,checkbox,input
+ *
+ * Element 元素block的一部分，没有独立的意义。语意上和block有关系
+ * 如：menuitem,listitem,checkboxcaption,headertitl
+ *
+ * Modifier 修饰符block或element上的标记。使用他来改变外观或行为
+ * 如：disabled,highlighted,checked,fixed,sizebig,coloryellow
+ */
 export const defaultNamespace = 'hometown';
 const statePrefix = 'is-';
 

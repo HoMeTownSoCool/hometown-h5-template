@@ -35,6 +35,7 @@
     "cleanup": "hometown cleanup"
   },
   "dependencies": {
+    "@hometownjs/request": "^0.0.1",
     "crypto-js": "^4.1.1",
     "pinia": "^2.0.13",
     "vant": "^4.0.10",

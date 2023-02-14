@@ -6,7 +6,7 @@ $colors: () !default;
 $colors: map.deep-merge(
   (
     'primary': (
-      'base': #1643df
+      'base': #FF1A00
     )
   ),
   $colors
@@ -19,7 +19,7 @@ $color-primary: map.get($colors, 'primary', 'base') !default;
 $text-color: () !default;
 $text-color: map.merge(
   (
-    'primary': #303133,
+    'primary': #000000,
     'regular': #606266,
     'secondary': #909399,
     'placeholder': #a8abb2,

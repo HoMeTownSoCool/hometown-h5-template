@@ -13,11 +13,13 @@ export default Unocss({
     'flex-center': 'flex justify-center items-center',
     'flex-x-center': 'flex justify-center',
     'flex-y-center': 'flex items-center',
-    'flex-col': 'flex flex-col'
+    'flex-col': 'flex flex-col',
+    'text-primary': 'text-#000000',
+    'text-regular': 'text-#606266'
   },
   theme: {
     colors: {
-      primary: 'var(--hometown-primary-color)'
+      primary: 'var(--hometown-primary)'
     }
   }
 });
