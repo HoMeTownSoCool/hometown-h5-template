@@ -7,5 +7,7 @@ import ImgLogo from '@/assets/images/common/logo.png';
     <h1 m-0 text-18px m-t-24px text-primary>✨ hometown-h5-template 💥</h1>
     <h4 text-regular>Be easy.</h4>
     <van-button type="primary" size="small">主要按钮</van-button>
+    <van-button type="primary" size="small">测试</van-button>
+    <van-button type="primary" size="small">测试一下commit-msg</van-button>
   </div>
 </template>

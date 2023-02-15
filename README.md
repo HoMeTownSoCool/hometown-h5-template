@@ -32,6 +32,7 @@
 
 - **node** `v14.21.2`
 - **npm** `v6.14.17`
+- **pnpm** `v7.26.3`
 - **vscode** `v1.75.1`
 
 ## Installation and use
