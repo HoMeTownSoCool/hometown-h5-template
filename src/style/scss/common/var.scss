@@ -5,23 +5,84 @@
 $colors: () !default;
 $colors: map.merge(
   (
-    'primary': #4837dd
+    'white': #fff,
+    'black': #000,
+    'primary': #FF1A00
   ),
   $colors
 );
 
 // 主题色
 $color-primary: map.get($colors, 'primary') !default;
+$color-white: map.get($colors, 'white') !default;
+$color-black: map.get($colors, 'black') !default;
 
 // 字体颜色
 $text-color: () !default;
 $text-color: map.merge(
   (
-    'primary': #000000,
-    'regular': #606266,
-    'secondary': #909399,
-    'placeholder': #a8abb2,
+    'primary': rgba(0, 0, 0, 1),
+    'regular': rgba(0, 0, 0, 0.6),
+    'secondary': rgba(0, 0, 0, 0.3),
+    'placeholder': rgba(0, 0, 0, 0.3),
     'disabled': #c0c4cc
   ),
   $text-color
 );
+
+$border-color: () !default;
+$border-color: map.merge((
+  'primary': #F4F4F4
+), $border-color);
+
+// Typography
+$font-family: () !default;
+$font-family: map.merge(
+  (
+    // default family
+    '':
+      "PingFangSC-Regular, PingFang SC",
+    'medium': 'AlibabaSans-Medium',
+    'regular': 'AlibabaSans-Regular'
+  ),
+  $font-family
+);
+
+$font-size: () !default;
+$font-size: map.merge(
+  (
+    'extra-large': 20px,
+    'large': 18px,
+    'medium': 16px,
+    'base': 14px,
+    'small': 13px,
+    'extra-small': 12px
+  ),
+  $font-size
+);
+
+$bg-color: () !default;
+$bg-color: map.merge(
+  (
+    'primary': #F9F9F9,
+    'secondary': #F6F7F9,
+  ),
+  $bg-color
+);
+
+// p-button
+$p-button: () !default;
+$p-button: map.deep-merge(
+  (
+    'secondary': (
+      'color': #F6F7F9
+    ),
+  ),
+  $p-button
+);
+
+// bottom-fixing-button
+$bottom-fixing-button: () !default;
+$bottom-fixing-button: map.merge((
+  'wrap-height': 60px
+), $bottom-fixing-button)

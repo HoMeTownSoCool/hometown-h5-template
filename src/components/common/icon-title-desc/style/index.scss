@@ -1,0 +1,16 @@
+@use '@/style/scss/mixins/mixins.scss' as *;
+@include b(icon-title-desc) {
+  --at-apply:  flex-col flex-center;
+  @include m(icon) {
+    --at-apply: mb-16px w-64px h-64px;
+  }
+  @include m(subtitle) {
+    --at-apply: m-0 m-b-8px font-400;
+  }
+  @include m(title) {
+    --at-apply: m-0;
+  }
+  @include m(desc) {
+    --at-apply: m-0 m-t-12px text-14px text-color-regular lh-20px max-w-267px;
+  }
+}

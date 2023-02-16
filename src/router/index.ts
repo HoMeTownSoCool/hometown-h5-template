@@ -1,6 +1,7 @@
 import type { App } from 'vue';
 import { createRouter, createWebHistory, createWebHashHistory } from 'vue-router';
-import routes from './routes';
+// eslint-disable-next-line import/no-unresolved
+import routes from 'virtual:generated-pages';
 const { VITE_HASH_ROUTE = 'false', VITE_BASE_URL } = import.meta.env;
 const history =
   VITE_HASH_ROUTE === 'true'

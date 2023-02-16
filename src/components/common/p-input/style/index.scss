@@ -1,0 +1,45 @@
+@use '@/style/scss/mixins/mixins.scss' as *;
+@use '@/style/scss/common/var.scss' as *;
+@use '@/style/scss/mixins/function.scss' as *;
+
+@mixin focusStatus() {
+  $input-bg: $color-white;
+  background-color: $input-bg;
+  border: 1px solid $color-primary;
+  @include e(inner) {
+    border: none;
+    background-color: $input-bg;
+  }
+}
+
+@include b(p-input) {
+  $input-bg: getCssVar('bg-color', 'primary');
+  --at-apply: flex flex-y-center box-border p-x-16px p-y-8px rounded-8px;
+  background-color: $input-bg;
+  position: relative;
+  border: 1px solid $input-bg;
+
+  @include e(inner) {
+    background-color: $input-bg;
+    border: 1px solid $input-bg;
+    border: none;
+    &::placeholder {
+      color: getCssVar('text-color', 'placeholder');
+      font-weight: 400;
+    }
+  }
+
+  @include e(verify-word) {
+    --at-apply: text-12px absolute;
+    color: $color-primary;
+    bottom: -20px;
+    left: 16px;
+  }
+
+  @include when(focus) {
+    @include focusStatus();
+  }
+  @include when(verify-fail) {
+    @include focusStatus();
+  }
+}

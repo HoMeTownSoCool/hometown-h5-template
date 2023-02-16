@@ -5,6 +5,9 @@
 @use 'mixins/var' as *;
 
 :root {
-  @include set-css-var-value('primary-color', $color-primary);
-  @include set-component-css-var('text-color', $text-color)
+  @include set-component-css-var('text-color', $text-color);
+  @include set-component-css-var('color', $colors);
+  @include set-component-css-var('border-color', $border-color);
+  @include set-component-css-var('font-family', $font-family);
+  @include set-component-css-var('bg-color', $bg-color) 
 }

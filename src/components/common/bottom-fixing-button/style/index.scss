@@ -1,0 +1,12 @@
+@use '@/style/scss/mixins/mixins.scss' as *;
+@use '@/style/scss/mixins/function.scss' as *;
+@use '@/style/scss/mixins/var' as *;
+@use '@/style/scss/common/var.scss' as *;
+:root {
+  @include set-component-css-var('bottom-fixing-button', $bottom-fixing-button);
+}
+@include b(bottom-fixing-button) {
+  --at-apply: w-full fixed bottom-0 left-0 bg-white flex-center;
+  height: getCssVar('bottom-fixing-button', 'wrap-height');
+  border-top: 1px solid getCssVar('border-color', 'primary');
+}
