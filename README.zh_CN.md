@@ -101,8 +101,6 @@ pnpm build
 
 项目已经内置 angular 提交规范，直接执行 commit 命令即可。
 
-首次提交代码前请执行命令开启 githooks:
-
 ```bash
 pnpm init-git-hooks
 ```

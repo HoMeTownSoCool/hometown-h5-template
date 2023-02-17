@@ -102,8 +102,6 @@ pnpm build
 
 The project has built in the regular submission specification. Just execute the commit command directly.
 
-Before submitting the code for the first time, please execute the command to open githoks:
-
 ```bash
 pnpm init-git-hooks
 ```
