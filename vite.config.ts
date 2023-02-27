@@ -6,5 +6,11 @@ export default createViteConfig({
   vitePathRoot: vitePath.root,
   vitePathSrc: vitePath.src,
   unpluginResolvers: ['Vant'],
-  vitePluginsCustom: setupVitePlugins()
+  vitePluginsCustom: setupVitePlugins(),
+  buildManualChunks: {
+    vue: ['vue'],
+    'vue-router': ['vue-router'],
+    vant: ['vant'],
+    'crypto-js': ['crypto-js']
+  }
 });

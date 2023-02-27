@@ -4,6 +4,7 @@ import { setupStore } from '@/store';
 import { setupVantUI } from '@/plugins';
 import App from './App.vue';
 import '@/style/scss/index.scss';
+import '@/assets/js/confetti.browser.min.js';
 // eslint-disable-next-line import/no-unresolved
 import 'uno.css';
 async function setupApp() {
