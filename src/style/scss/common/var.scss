@@ -7,7 +7,8 @@ $colors: map.merge(
   (
     'white': #fff,
     'black': #000,
-    'primary': #3f3fe3
+    'primary': #3f3fe3,
+    'grey': #666666
   ),
   $colors
 );
@@ -16,6 +17,7 @@ $colors: map.merge(
 $color-primary: map.get($colors, 'primary') !default;
 $color-white: map.get($colors, 'white') !default;
 $color-black: map.get($colors, 'black') !default;
+$color-grey: map.get($colors, 'grey') !default;
 
 // 字体颜色
 $text-color: () !default;
@@ -42,8 +44,9 @@ $font-family: map.merge(
     // default family
     '':
       "PingFangSC-Regular, PingFang SC",
-    'medium': 'AlibabaSans-Medium',
-    'regular': 'AlibabaSans-Regular'
+    'pf-medium': 'PingFangSC-Medium, PingFang SC',
+    'ali-medium': 'AlibabaSans-Medium',
+    'ali-regular': 'AlibabaSans-Regular'
   ),
   $font-family
 );
@@ -65,9 +68,24 @@ $bg-color: () !default;
 $bg-color: map.merge(
   (
     'primary': #F9F9F9,
+    'regular': #F6F5F5,
     'secondary': #F6F7F9,
   ),
   $bg-color
+);
+
+$shadow: () !default;
+$shadow: map.merge((
+  'primary': 0px 2px 6px 0px rgba(246,245,245,0.8),
+),
+$shadow);
+
+$rounded: () !default;
+$rounded: map.merge(
+  (
+    'primary': 12px,
+  ),
+  $rounded
 );
 
 // p-button

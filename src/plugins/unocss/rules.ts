@@ -14,9 +14,9 @@ function buildRule(keys: string[], cssvarKey: string, cssKey: string) {
   return rules;
 }
 
-export const createRules = function createRules(): any {
+export const createRules = function createRules(): unknown[] {
   const uc = useCssvar();
-  let rules: any = [];
+  let rules: unknown[] = [];
   /** z-index */
   const zIndexs = [/^z-(\d+)$/, ([, d]: [unknown, number]) => ({ 'z-index': d })];
   rules.push(zIndexs);
@@ -26,11 +26,19 @@ export const createRules = function createRules(): any {
   rules = [...rules, ...buildRule(textColors, 'text-color', 'color')];
 
   /** bg colors */
-  const bgColors = ['primary', 'secondary'];
+  const bgColors = ['primary', 'secondary', 'regular'];
   rules = [...rules, ...buildRule(bgColors, 'bg-color', 'background-color')];
 
+  /** box shadows */
+  const boxShadows = ['primary'];
+  rules = [...rules, ...buildRule(boxShadows, 'box-shadow', 'box-shadow')];
+
+  /** box rounded */
+  const boxRoundeds = ['primary'];
+  rules = [...rules, ...buildRule(boxRoundeds, 'box-rounded', 'border-radius')];
+
   /** font familys */
-  const fontFamilys = ['', 'medium', 'regular'];
+  const fontFamilys = ['', 'pf-medium', 'ali-medium', 'ali-regular'];
   rules = [...rules, ...buildRule(fontFamilys, 'font-family', 'font-family')];
 
   /** bottom-fixing-btn-padding */

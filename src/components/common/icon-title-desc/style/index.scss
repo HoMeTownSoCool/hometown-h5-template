@@ -8,7 +8,7 @@
     --at-apply: m-0 m-b-8px font-400;
   }
   @include m(title) {
-    --at-apply: m-0;
+    --at-apply: m-0 text-22px;
   }
   @include m(desc) {
     --at-apply: m-0 m-t-12px text-14px text-color-regular lh-20px max-w-267px;

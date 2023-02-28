@@ -3,6 +3,7 @@ import { bottomFixingButtonProps } from './props';
 const ns = useNamespace('bottom-fixing-button');
 const props = defineProps(bottomFixingButtonProps);
 const emits = defineEmits(['buttonClick']);
+
 function onClick() {
   if (props.disabled) return;
   emits('buttonClick');
