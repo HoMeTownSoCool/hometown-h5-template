@@ -2,6 +2,23 @@
 import ImgLogo from '@/assets/images/common/logo.png';
 const cofetti = useCofetti();
 const ns = useNamespace('about');
+const stacks = [
+  'https://img.shields.io/badge/-Vue.js-4FC08D?&logo=Vue.js&logoColor=white',
+  'https://img.shields.io/badge/-Vite-646CFF?logo=Vite&logoColor=white',
+  'https://img.shields.io/badge/-TypeScript-007ACC?logo=typescript&logoColor=white',
+  'https://img.shields.io/badge/-UnoCSS-666?logo=UnoCSS&logoColor=white',
+  'https://img.shields.io/badge/-pnpm-F69220?logo=pnpm&logoColor=white',
+  'https://img.shields.io/badge/-Sass-CC6699?logo=sass&logoColor=white'
+];
+const merits = [
+  '基于Vue3、Ts、Pinia等前端前沿技术栈开发',
+  '完善的Eslint + Prettier项目协同方案，“0” 配置直接上手开干',
+  '项目内置 Vite Conf，“0” 配置直接上手业务开发',
+  'Components、Hooks、Utils、Vue 的全自动导入，“0” 引入，彻底解放双手',
+  'pnpm 包管理方案',
+  'UnoCss + Scss + CssVar 随时修改主题色',
+  '自动生成前端路由，约定大约配置'
+];
 
 onMounted(() => {
   cofetti.play();
@@ -18,34 +35,36 @@ onMounted(() => {
         前端开发朋友的开发环境，专注于业务，提高开发效率， 也可用于学习参考。
       </p>
     </div>
-    <div :class="[ns.e('stack')]">
-      <h3>用到的技术</h3>
-      <p>Vue3 <span class="tag">v3.2.31</span></p>
-      <p>TypeScript <span class="tag">v4.9.5</span></p>
-      <p>Vite <span class="tag">v4.1.1</span></p>
-      <p>VantUI <span class="tag">v4.0.10</span></p>
-      <p>Pinia <span class="tag">v2.0.13</span></p>
-      <p>UnoCSS <span class="tag">v0.49.4</span></p>
-      <p>sass <span class="tag">v1.49.11</span></p>
+    <div>
+      <h3>技术栈</h3>
+      <van-space wrap><van-image v-for="item in stacks" :key="item" :src="item"></van-image></van-space>
     </div>
 
     <div>
-      <h3>项目亮点</h3>
-      <p>1. 基于Vue3、Ts、Pinia等前端前沿技术栈开发。</p>
-      <p>3. 完善的Eslint + Prettier项目协同方案，“0” 配置直接上手开干。</p>
-      <p>6. 项目内置 Vite Conf，“0” 配置直接上手业务开发。</p>
-      <p>4. Components、Hooks、Utils、Vue 的全自动导入，“0” 引入，彻底解放双手。</p>
-      <p>5. pnpm 包管理方案。</p>
-      <p>7. UnoCss + Scss + CssVar 随时修改主题色。</p>
-      <p>8. 自动生成前端路由，约定大约配置！</p>
+      <h3>协同方案</h3>
+      <van-space wrap>
+        <van-image src="https://img.shields.io/badge/-ESLint-4B32C3?logo=ESLint&logoColor=white"></van-image>
+        <van-image src="https://img.shields.io/badge/-Prettier-F7B93E?logo=Prettier&logoColor=white"></van-image>
+        <van-image src="https://img.shields.io/badge/-commitlint-000000?logo=commitlint&logoColor=white"></van-image>
+      </van-space>
+    </div>
+
+    <div>
+      <h3>优点</h3>
+      <p v-for="(item, index) in merits" :key="index">{{ index + 1 }}. {{ item }}。</p>
     </div>
 
     <div>
       <h3>作者</h3>
-      <div text-primary font-family-ali-medium>HoMeTown 🐵</div>
+      <div text-primary font-family-ali-medium>HoMeTown</div>
     </div>
 
-    <bottom-fixing-button :disabled="true"></bottom-fixing-button>
+    <bottom-fixing-button>
+      <van-image
+        w-32px
+        src="https://emojis.slackmojis.com/emojis/images/1643514069/257/github.png?1643514069"
+      ></van-image>
+    </bottom-fixing-button>
   </div>
 </template>
 <style lang="scss" scoped>

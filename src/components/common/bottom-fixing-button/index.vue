@@ -11,7 +11,11 @@ function onClick() {
 </script>
 <template>
   <div :class="ns.b()">
-    <p-button w-280px h-44px type="primary" :disabled="props.disabled" @click="onClick">{{ props.text }}</p-button>
+    <slot
+      ><p-button w-280px h-44px type="primary" :disabled="props.disabled" @click="onClick">{{
+        props.text
+      }}</p-button></slot
+    >
   </div>
 </template>
 <style lang="scss">
