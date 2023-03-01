@@ -1,4 +1,5 @@
 import { showToast, showDialog } from 'vant';
+import type { ToastOptions, DialogOptions } from 'vant';
 // Toast
 import 'vant/es/toast/style';
 // Dialog
@@ -7,6 +8,10 @@ import 'vant/es/dialog/style';
 // ImagePreview
 
 export function setupVantUI() {
-  window.$showToast = showToast;
-  window.$showDialog = showDialog;
+  (window as Window & Record<string, any>).$showToast = (options: ToastOptions | string): void => {
+    showToast(options);
+  };
+  (window as Window & Record<string, any>).$showDialog = (options: DialogOptions): void => {
+    showDialog(options);
+  };
 }

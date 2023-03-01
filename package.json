@@ -27,12 +27,14 @@
   "main": "index.js",
   "scripts": {
     "dev": "vite --mode=development",
-    "build": "vite build --mode=production",
+    "build": "pnpm run typecheck & vite build --mode=production",
+    "build:test": "pnpm run typecheck & vite build --mode=test",
+    "build:dev": "pnpm run typecheck & vite build --mode=dev",
     "lint": "eslint . --ext .vue,.js,.jsx,.ts,.tsx --fix --ignore-pattern /*.d.ts",
     "lint-staged": "lint-staged",
     "commit": "hometown git-commit",
     "prepare": "husky install",
-    "typecheck": "vue-tsc --noEmit",
+    "typecheck": "vue-tsc --noEmit --skipLibCheck",
     "cleanup": "hometown cleanup"
   },
   "dependencies": {

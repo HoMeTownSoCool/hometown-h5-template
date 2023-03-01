@@ -9,5 +9,7 @@
   @include set-component-css-var('color', $colors);
   @include set-component-css-var('border-color', $border-color);
   @include set-component-css-var('font-family', $font-family);
-  @include set-component-css-var('bg-color', $bg-color) 
+  @include set-component-css-var('bg-color', $bg-color);  
+  @include set-component-css-var('box-shadow', $shadow);
+  @include set-component-css-var('box-rounded', $rounded)  
 }

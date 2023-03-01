@@ -86,5 +86,6 @@
   "[vue]": {
     "editor.defaultFormatter": "Vue.volar"
   },
-  "nuxt.isNuxtApp": false
+  "nuxt.isNuxtApp": false,
+  "liveServer.settings.port": 5501
 }

@@ -1,6 +1,6 @@
 import { presetUno, presetAttributify, presetIcons, defineConfig } from 'unocss';
 import transformerDirectives from '@unocss/transformer-directives';
-import { createRules, createShortcuts, createTheme } from './src/plugins/unocss/index';
+import { createRules, createShortcuts, createTheme } from './src/plugins/unocss';
 export default defineConfig({
   presets: [presetUno(), presetAttributify(), presetIcons()],
   include: [`${__dirname}/**/*`],

@@ -1,5 +1,11 @@
 <template>
-  <router-view></router-view>
+  <router-view v-slot="{ Component }">
+    <!-- created->mounted->activated -->
+    <keep-alive>
+      <component :is="Component" v-if="$route.meta.keepAlive" :key="$route.name" />
+    </keep-alive>
+    <component :is="Component" v-if="!$route.meta.keepAlive" :key="$route.name" />
+  </router-view>
 </template>
 <style lang="scss">
 @import '@/style/scss/mixins/function.scss';

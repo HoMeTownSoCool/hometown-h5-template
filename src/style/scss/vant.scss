@@ -7,5 +7,33 @@
 :root {
   --van-primary-color: #{$color-primary};
   --van-button-disabled-opacity: 0.3;
+  --van-radio-duration: 0 !important;
   --van-dialog-width: 280px;
+  --van-border-color:none;
+  // --van-step-icon-size:14px!important;
+  --van-step-icon-size:26px!important;
+  --van-step-circle-size:18px!important;
+}
+
+.van-uploader__preview-image,.van-uploader__wrapper,.van-uploader__input-wrapper {
+    width: 100px!important;
+    height:60px!important;
+}
+
+.van-step__circle {
+  background-color:#F6ACAC!important;
+}
+
+
+// radio
+.van-radio__icon {
+  &.van-radio__icon--checked {
+    .van-badge__wrapper {
+      background-color: $color-primary !important;
+    }
+  }
+  .van-badge__wrapper {
+    border-color: map.get($bg-color, 'secondary') !important;
+    background-color: map.get($bg-color, 'secondary');
+  }
 }

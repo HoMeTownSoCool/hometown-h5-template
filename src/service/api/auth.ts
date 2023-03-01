@@ -5,8 +5,6 @@ import request from '../request';
  * @param key - 请求参数
  * @returns
  */
-export function fetchGetNews(params: any) {
-  return request.get(`/toutiao/index`, {
-    params
-  });
+export function fetchCreateAcc(params: any) {
+  return request.post('/account/api/walletAcc/createAcc', params);
 }

@@ -5,6 +5,7 @@ const vitePath = resolvePath('./', import.meta.url);
 export default createViteConfig({
   vitePathRoot: vitePath.root,
   vitePathSrc: vitePath.src,
+  vitePluginsDefaults: ['vue', 'html', 'visualizer'],
   unpluginResolvers: ['Vant'],
   vitePluginsCustom: setupVitePlugins(),
   buildManualChunks: {

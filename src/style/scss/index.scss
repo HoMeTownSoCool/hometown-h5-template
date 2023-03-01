@@ -3,3 +3,10 @@
 @import './var.scss';
 @import './vant.scss';
 @import './font/index.scss';
+
+.cfca-keyboard-v7 {
+  padding-top: 4px;
+  > div {
+    display: none;
+  }
+}

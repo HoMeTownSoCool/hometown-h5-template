@@ -6,7 +6,7 @@ const CryptoSecretAES = '__CryptoJS_Secret__';
  * 加密数据
  * @param data - 数据
  */
-export function encryptoAES(data: any) {
+export function encryptoAES(data: unknown) {
   const newData = JSON.stringify(data);
   return CryptoJS.AES.encrypt(newData, CryptoSecretAES).toString();
 }
