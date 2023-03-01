@@ -1,5 +1,5 @@
 <p align="center">
-  <img width="220px" src="https://github.com/HoMeTownJS/site/blob/main/public/images/logo-vertical.png?raw=true" />
+  <img width="160px" src="https://github.com/HoMeTownJS/site/blob/main/public/images/logo.png?raw=true" />
 </p>
 <h1 align="center">✨ hometown-h5-template 💥</h1>
 <p align="center">A Vue 3 h5 template.</p>

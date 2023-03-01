@@ -1,7 +1,7 @@
 <p align="center">
-  <img width="220px" src="https://github.com/HoMeTownJS/site/blob/main/public/images/logo-vertical.png?raw=true" />
+  <img width="160px" src="https://github.com/HoMeTownJS/site/blob/main/public/images/logo.png?raw=true" />
 </p>
-<p align="center"><b>✨ hometown-h5-template 💥</b></p>
+<h1 align="center">✨ hometown-h5-template 💥</h1>
 <p align="center">轻松，简单，开箱即用 📦</p>
 <p align="center"><a href="README.md">English</a> | 中文</p>
 

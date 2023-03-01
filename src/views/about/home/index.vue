@@ -1,5 +1,4 @@
 <script lang="ts" setup>
-import ImgLogo from '@/assets/images/common/logo.png';
 const cofetti = useCofetti();
 const ns = useNamespace('about');
 const stacks = [
@@ -20,13 +19,21 @@ const merits = [
   '自动生成前端路由，约定大约配置'
 ];
 
+function herf2page(url: string) {
+  window.location.href = url;
+}
+
 onMounted(() => {
   cofetti.play();
 });
 </script>
 <template>
   <div box-border p16px :class="[ns.b()]" p-bto-fix-btn>
-    <icon-title-desc :icon="ImgLogo" title="hometown-h5-template" desc="Be easy. Be simple. 开箱即用 📦">
+    <icon-title-desc
+      icon="https://raw.githubusercontent.com/HoMeTownJS/site/main/public/images/logo.png"
+      title="hometown-h5-template"
+      desc="Be easy. Be simple. 开箱即用 📦"
+    >
     </icon-title-desc>
     <div>
       <h3>简介</h3>
@@ -56,13 +63,16 @@ onMounted(() => {
 
     <div>
       <h3>作者</h3>
-      <div text-primary font-family-ali-medium>HoMeTown</div>
+      <div text-primary font-family-medium font-600 @click="herf2page('https://juejin.cn/user/4116184668057390')">
+        HoMeTown
+      </div>
     </div>
 
     <bottom-fixing-button>
       <van-image
         w-32px
         src="https://emojis.slackmojis.com/emojis/images/1643514069/257/github.png?1643514069"
+        @click="herf2page('https://github.com/HoMeTownSoCool/hometown-h5-template')"
       ></van-image>
     </bottom-fixing-button>
   </div>
