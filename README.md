@@ -6,6 +6,11 @@
 <p align="center"><b>Be easy. Be simple. Out of the box📦</b></p>
 <p align="center">English | <a href="README.zh_CN.md">中文</a></p>
 
+<p align="center">
+<img src="https://img.shields.io/badge/license-MIT-4424e0.svg?" />
+</p>
+
+
 ## Introduction
 
 [hometown-h5-template](https://github.com/HoMeTownSoCool/hometown-h5-template) It is an out-of-the-box h5 front-end solution, which provides a rich and concise development environment for front-end development friends, focuses on business, improves development efficiency, and can also be used for learning reference.
@@ -123,6 +128,10 @@ git push origin xx
 | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/archive/internet-explorer_9-11/internet-explorer_9-11_48x48.png" alt="IE" width="24px" height="24px"  />](http://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/edge/edge_48x48.png" alt=" Edge" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/firefox/firefox_48x48.png" alt="Firefox" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/chrome/chrome_48x48.png" alt="Chrome" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/) | [<img src="https://raw.githubusercontent.com/alrra/browser-logos/master/src/safari/safari_48x48.png" alt="Safari" width="24px" height="24px" />](http://godban.github.io/browsers-support-badges/) |
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                                                               not support                                                                                                               |                                                                                        last 2 versions                                                                                        |                                                                                            last 2 versions                                                                                            |                                                                                          last 2 versions                                                                                           |                                                                                          last 2 versions                                                                                           |
+
+
+## License
+[MIT](./LICENSE)
 
 ## Author
 
