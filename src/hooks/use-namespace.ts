@@ -9,30 +9,26 @@
  * Modifier 修饰符block或element上的标记。使用他来改变外观或行为
  * 如：disabled,highlighted,checked,fixed,sizebig,coloryellow
  */
-export const defaultNamespace = 'hometown';
-export const statePrefix = 'is-';
-export const commonSeparator = '-';
-export const elementSeparator = '__';
-export const modifierSeparator = '--';
+import { DEFAULT_NAMESPACE, STATE_PREFIX, COMMON_SEPARATOR, ELEMENT_SEPARATOR, MODIFIER_SEPARATOR } from '@/const';
 
 // eslint-disable-next-line max-params
 function bemCreator(namespace: string, block: string, blockSuffix: string, element: string, modifier: string) {
   let cls = `${namespace}-${block}`;
   if (blockSuffix) {
-    cls += `${commonSeparator}${blockSuffix}`;
+    cls += `${COMMON_SEPARATOR}${blockSuffix}`;
   }
   if (element) {
-    cls += `${elementSeparator}${element}`;
+    cls += `${ELEMENT_SEPARATOR}${element}`;
   }
   if (modifier) {
-    cls += `${modifierSeparator}${modifier}`;
+    cls += `${MODIFIER_SEPARATOR}${modifier}`;
   }
   return cls;
 }
 
 /** namespace */
 export const useNamespace = (block: string) => {
-  const namespace = defaultNamespace;
+  const namespace = DEFAULT_NAMESPACE;
   const b = (blockSuffix = '') => bemCreator(namespace, block, blockSuffix, '', '');
   const e = (element?: string) => (element ? bemCreator(namespace, block, '', element, '') : '');
   const m = (modifier?: string) => (modifier ? bemCreator(namespace, block, '', '', modifier) : '');
@@ -46,7 +42,7 @@ export const useNamespace = (block: string) => {
     blockSuffix && element && modifier ? bemCreator(namespace, block, blockSuffix, element, modifier) : '';
   const is = (name: string, ...args: [boolean | undefined] | []) => {
     const state = args.length >= 1 ? args[0] : true;
-    return name && state ? `${statePrefix}${name}` : '';
+    return name && state ? `${STATE_PREFIX}${name}` : '';
   };
   return {
     b,

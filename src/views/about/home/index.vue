@@ -1,4 +1,6 @@
 <script lang="ts" setup>
+import { useCofetti } from 'cofetti';
+import { showToast } from 'vant';
 const cofetti = useCofetti();
 const ns = useNamespace('about');
 const stacks = [
@@ -33,6 +35,7 @@ onMounted(() => {
       icon="https://raw.githubusercontent.com/HoMeTownJS/site/main/public/images/logo.png"
       title="hometown-h5-template"
       desc="Be easy. Be simple. 开箱即用 📦"
+      @click="showToast('great!')"
     >
     </icon-title-desc>
     <div>

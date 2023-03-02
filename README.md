@@ -10,6 +10,9 @@
 
 [hometown-h5-template](https://github.com/HoMeTownSoCool/hometown-h5-template) It is an out-of-the-box h5 front-end solution, which provides a rich and concise development environment for front-end development friends, focuses on business, improves development efficiency, and can also be used for learning reference.
 
+## Preview
+[Online preview](https://hh5t.hometownjs.top/about/home)
+
 ## Technology stack
 
 - **Vue3** `v3.2.31`
@@ -102,17 +105,14 @@ pnpm build
 
 The project has built in the regular submission specification. Just execute the commit command directly.
 
-Before submitting the code for the first time, please execute the command to open githoks:
-
-```bash
-pnpm init-git-hooks
-```
 
 code commit:
 
 ```bash
 git add .
+
 pnpm commit
+
 git push origin xx
 ```
 

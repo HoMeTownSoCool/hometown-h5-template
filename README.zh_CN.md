@@ -9,6 +9,9 @@
 
 [hometown-h5-template](https://github.com/HoMeTownSoCool/hometown-h5-template) 是一个开箱即用的 h5 前端解决方案，为前端开发朋友提供丰富简洁的开发环境，专注于业务，提高开发效率的同时也可用于学习参考。
 
+## 预览
+[在线预览](https://hh5t.hometownjs.top/about/home)
+
 ## 技术栈
 
 - **Vue3** `v3.2.31`
@@ -101,17 +104,13 @@ pnpm build
 
 项目已经内置 angular 提交规范，直接执行 commit 命令即可。
 
-首次提交代码前请执行命令开启 githooks:
-
-```bash
-pnpm init-git-hooks
-```
-
 代码提交
 
 ```bash
 git add .
+
 pnpm commit
+
 git push origin xx
 ```
 

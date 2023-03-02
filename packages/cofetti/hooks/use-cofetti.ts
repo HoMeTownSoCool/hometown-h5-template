@@ -19,7 +19,7 @@ export function useCofetti() {
         return clearInterval(interval);
       }
       const particleCount = 50 * (timeLeft / duration);
-      window.confetti({
+      (window as typeof window & Record<string, any>).confetti({
         ...defaults,
         particleCount,
         origin: {
@@ -27,7 +27,7 @@ export function useCofetti() {
           y: Math.random() - 0.2
         }
       });
-      window.confetti({
+      (window as typeof window & Record<string, any>).confetti({
         ...defaults,
         particleCount,
         origin: {

@@ -1,8 +1,8 @@
-import { defaultNamespace } from './use-namespace';
+import { DEFAULT_NAMESPACE } from '../const';
 /** cssvar */
 export default function useCssvar() {
   function joinVarName(spaces: string[]): string {
-    let name = `--${defaultNamespace}`;
+    let name = `--${DEFAULT_NAMESPACE}`;
     spaces.forEach(space => (name += `-${space}`));
     return name;
   }
