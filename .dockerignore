@@ -28,6 +28,3 @@ stats.html
 
 package-lock.json
 yarn.lock
-
-components.d.ts
-auto-imports.d.ts

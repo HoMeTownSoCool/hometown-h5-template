@@ -7,7 +7,7 @@ importers:
       '@hometownjs/command': ^0.0.4
       '@hometownjs/eslint-config-vue3': ^0.0.3
       '@hometownjs/request': ^0.0.1
-      '@hometownjs/vite-config-vue': ^1.0.3
+      '@hometownjs/vite-config-vue': ^1.0.4
       '@types/crypto-js': ^4.1.1
       '@unocss/preset-attributify': ^0.49.4
       '@unocss/preset-icons': ^0.49.4
@@ -42,7 +42,7 @@ importers:
     devDependencies:
       '@hometownjs/command': 0.0.4_g3hupqmcwqttkkrkndf7sw5x5u
       '@hometownjs/eslint-config-vue3': 0.0.3_ycpbpc6yetojsgtrx3mwntkhsu
-      '@hometownjs/vite-config-vue': 1.0.3_f3r5ktlndlwx7eoodvxqnhkui4
+      '@hometownjs/vite-config-vue': 1.0.4_f3r5ktlndlwx7eoodvxqnhkui4
       '@types/crypto-js': 4.1.1
       '@unocss/preset-attributify': 0.49.8
       '@unocss/preset-icons': 0.49.8
@@ -58,6 +58,9 @@ importers:
       vite-plugin-pages: 0.28.0_vite@4.1.4
       vite-plugin-vconsole: 1.3.1
       vue-tsc: 0.40.13_typescript@4.9.5
+
+  packages/cofetti:
+    specifiers: {}
 
 packages:
 
@@ -1557,8 +1560,8 @@ packages:
       - supports-color
     dev: false
 
-  /@hometownjs/vite-config-vue/1.0.3_f3r5ktlndlwx7eoodvxqnhkui4:
-    resolution: {integrity: sha512-bFvmKls4byWN/akDvGvYzzSsPVLmpr9dOP7EwrDpybFQCOCp4XXz9QZrgxMOnuKi9PJj8plGwTTUariP+SmP0g==}
+  /@hometownjs/vite-config-vue/1.0.4_f3r5ktlndlwx7eoodvxqnhkui4:
+    resolution: {integrity: sha512-VDB9f/diHdCTSAQCP3V1hnz02vZgMOO7+kzJmlVXOjqpARZzsAlvSjOa/r5sCqIPp+ZkDtCob1HngK0U9Ufrbg==}
     peerDependencies:
       '@vitejs/plugin-legacy': ^4.0.1
       '@vitejs/plugin-vue': ^2.3.1

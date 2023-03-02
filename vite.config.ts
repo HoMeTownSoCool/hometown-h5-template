@@ -8,6 +8,7 @@ export default createViteConfig({
   vitePluginsDefaults: ['vue', 'html', 'visualizer'],
   unpluginResolvers: ['Vant'],
   vitePluginsCustom: setupVitePlugins(),
+  serverOpen: false,
   buildManualChunks: {
     vue: ['vue'],
     'vue-router': ['vue-router'],
