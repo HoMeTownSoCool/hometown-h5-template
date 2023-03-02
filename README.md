@@ -10,12 +10,12 @@
 <img src="https://img.shields.io/badge/license-MIT-4424e0.svg?" />
 </p>
 
-
 ## Introduction
 
 [hometown-h5-template](https://github.com/HoMeTownSoCool/hometown-h5-template) It is an out-of-the-box h5 front-end solution, which provides a rich and concise development environment for front-end development friends, focuses on business, improves development efficiency, and can also be used for learning reference.
 
 ## Preview
+
 [Online preview](https://hh5t.hometownjs.top/about/home)
 
 ## Technology stack
@@ -110,7 +110,6 @@ pnpm build
 
 The project has built in the regular submission specification. Just execute the commit command directly.
 
-
 code commit:
 
 ```bash
@@ -129,13 +128,18 @@ git push origin xx
 | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------: |
 |                                                                                                               not support                                                                                                               |                                                                                        last 2 versions                                                                                        |                                                                                            last 2 versions                                                                                            |                                                                                          last 2 versions                                                                                           |                                                                                          last 2 versions                                                                                           |
 
-
 ## License
+
 [MIT](./LICENSE)
+
+## CHANGELOG
+
+[CHANGELOG]('./CHANGELOG')
 
 ## Author
 
 [HoMeTown](https://juejin.cn/user/4116184668057390) 🙊
 
 ## Thanks
+
 [Soybean](https://github.com/honghuangdc)
