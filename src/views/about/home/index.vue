@@ -3,6 +3,7 @@ import { useCofetti } from 'cofetti';
 import { showToast } from 'vant';
 const cofetti = useCofetti();
 const ns = useNamespace('about');
+const router = useRouter();
 const stacks = [
   'https://img.shields.io/badge/-Vue.js-4FC08D?&logo=Vue.js&logoColor=white',
   'https://img.shields.io/badge/-Vite-646CFF?logo=Vite&logoColor=white',
@@ -38,6 +39,9 @@ onMounted(() => {
       @click="showToast('great!')"
     >
     </icon-title-desc>
+    <div flex-center mt-20px>
+      <h-button type="primary" w-112px h-36px @click="router.push('/example')">Jump page</h-button>
+    </div>
     <div>
       <h3>简介</h3>
       <p text-color-regular text-14px lh-26px>
