@@ -45,8 +45,8 @@ onMounted(() => {
     <div>
       <h3>简介</h3>
       <p text-color-regular text-14px lh-26px>
-        hometown-h5-template 是一个开箱即用的h5前端解决方案，它提供了丰富而简洁的
-        前端开发朋友的开发环境，专注于业务，提高开发效率， 也可用于学习参考。
+        hometown-h5-template 是一个基于前端前沿技术栈、干净、开箱即用的前端H5解决方案。
+        提供完善的前端H5开发环境，快速启动项目，为专注业务实现与开发，提高开发效率而生，也可用于学习参考。
       </p>
     </div>
     <div>

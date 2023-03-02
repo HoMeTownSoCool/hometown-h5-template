@@ -7,7 +7,7 @@
 
 ## 简介
 
-[hometown-h5-template](https://github.com/HoMeTownSoCool/hometown-h5-template) 是一个开箱即用的 h5 前端解决方案，为前端开发朋友提供丰富简洁的开发环境，专注于业务，提高开发效率的同时也可用于学习参考。
+[hometown-h5-template](https://github.com/HoMeTownSoCool/hometown-h5-template) 是一个基于前端前沿技术栈、干净、开箱即用的前端H5解决方案。 提供完善的前端H5开发环境，快速启动项目，为专注业务实现与开发，提高开发效率而生，也可用于学习参考。
 
 ## 预览
 [在线预览](https://hh5t.hometownjs.top/about/home)
@@ -25,10 +25,13 @@
 
 ## 特性
 
-- **最新技术栈：** Vue3/Vite4 等前沿技术开发 & 高效的 npm 包管理工具 pnpm
-- **TypeScript：** 应用程序级 JavaScript
-- **灵活的 CSS：** 单一的主题配置入口，强大的 CssVar
-- **Request：** 基于 axios 的一套完整的网络请求方案
+- **最新技术栈：** Vue3、TypeScirpt、Vite4、UnoCSS、Pinia 等前沿技术开发。
+- **高效包管理工具：** 使用pnpm作为首选包管理工具。
+- **TypeScript：** 应用程序级 JavaScript。
+- **灵活的 CSS：** 单一主题配置入口，强大的 CssVar。
+- **开箱即用：** 配置丰富，易上手，开箱即用。
+- **monorepo架构** 内置monorepo架构，你可以不用，我不能没有。
+- **现代移动端自适应方案：** 使用viewport
 
 ## 开发环境推荐
 
@@ -127,3 +130,6 @@ git push origin xx
 ## 作者
 
 [HoMeTown](https://juejin.cn/user/4116184668057390) 🙊
+
+## Thanks
+[Soybean](https://github.com/honghuangdc)
